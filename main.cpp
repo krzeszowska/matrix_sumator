@@ -85,6 +85,8 @@ void tester(){
 
 int main() {
 
+// Podczas testowania programu strumien wejsciowy zostal przekierowany na odpowiedni dla danego testu plik z katalogu testy
+
     tester<int>();
   //  tester<float>();
    // generuj_floaty(900000, 10.987, 1000.002, 1000);

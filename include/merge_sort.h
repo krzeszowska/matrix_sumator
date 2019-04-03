@@ -42,7 +42,7 @@ void sortujMS(vector<Typ> &lewyCiag, vector<Typ> &prawyCiag, vector<Typ> &tab){
 
 template<typename Typ>
 void posortujMS(vector<Typ> &tab){
-    if (tab.size() <= 1);
+    if (tab.size() <= 1) return;
     else {
         vector<Typ> lewyCiag;
         vector<Typ> prawyCiag;
