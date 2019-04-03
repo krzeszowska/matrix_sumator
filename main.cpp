@@ -13,7 +13,7 @@ void generuj_inty(int ilosc, int min, int max){
     for(int i=0; i<ilosc; ++i){
         wart = rand() % r + min;
         cout << wart << endl;
-      //  cerr<< "generowanie "<<i;
+        cerr<< "generowanie "<<i;
     }
 }
 
@@ -23,7 +23,7 @@ void generuj_floaty(int ilosc, float min, float max, int precyzja){
     for(int i=0; i<ilosc; ++i){
         wart = (float)(rand() % r)/precyzja + min;
         cout << wart << endl;
-       // cerr<< "generowanie "<<i;
+        cerr<< "generowanie "<<i;
     }
 }
 
@@ -51,7 +51,7 @@ void tester(){
         for (size_t i = 1; i < buff.size(); i++){
         if(buff[i-1] > buff[i]) {
             cerr << "zle posortowano" << i << endl;
-           // return;
+            return;
         }
     }
 
@@ -64,7 +64,7 @@ void tester(){
     for (size_t i = 1; i < buff.size(); i++){
         if(buff[i-1] > buff[i]) {
             cerr << "zle posortowano" << i << endl;
-           // return;
+            return;
         }
     }
 
