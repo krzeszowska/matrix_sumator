@@ -3,7 +3,7 @@
 	<iostream>
 	<vector>
 
-1554286060 source:/home/julka/uczelnia/sem4/PAMSI/sortowanie/main.cpp
+1554286815 source:/home/julka/uczelnia/sem4/PAMSI/sortowanie/main.cpp
 	<vector>
 	<iostream>
 	"include/merge_sort.h"
@@ -18,7 +18,7 @@
 1553690091 source:/home/julka/uczelnia/sem4/PAMSI/sortowanie/src/merge_sort.cpp
 	"merge_sort.h"
 
-1554286266 /home/julka/uczelnia/sem4/PAMSI/sortowanie/include/merge_sort.h
+1554291773 /home/julka/uczelnia/sem4/PAMSI/sortowanie/include/merge_sort.h
 	<iostream>
 	<vector>
 
