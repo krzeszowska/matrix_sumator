@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1553284582 source:/home/julka/uczelnia/sem4/PAMSI/sortowanie/merge_sort.cpp
+	<iostream>
+	<vector>
+
+1554286060 source:/home/julka/uczelnia/sem4/PAMSI/sortowanie/main.cpp
+	<vector>
+	<iostream>
+	"include/merge_sort.h"
+	"include/quicksort.h"
+	"include/heap_sort.h"
+	<sys/time.h>
+
+1553284447 /home/julka/uczelnia/sem4/PAMSI/sortowanie/merge_sort.cpp
+	<iostream>
+	<vector>
+
+1553690091 source:/home/julka/uczelnia/sem4/PAMSI/sortowanie/src/merge_sort.cpp
+	"merge_sort.h"
+
+1554286266 /home/julka/uczelnia/sem4/PAMSI/sortowanie/include/merge_sort.h
+	<iostream>
+	<vector>
+
+1553773734 source:/home/julka/uczelnia/sem4/PAMSI/sortowanie/src/quicksort.cpp
+	"quicksort.h"
+
+1553969245 /home/julka/uczelnia/sem4/PAMSI/sortowanie/include/quicksort.h
+	<iostream>
+	<vector>
+
+1553775532 source:/home/julka/uczelnia/sem4/PAMSI/sortowanie/src/heap_sort.cpp
+	"heap_sort.h"
+
+1553777433 /home/julka/uczelnia/sem4/PAMSI/sortowanie/include/heap_sort.h
+	<iostream>
+	<vector>
+

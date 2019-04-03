@@ -1,79 +1,104 @@
+#include <vector>
 #include <iostream>
-#include <list>
-#include <stack>
-#include <queue>
+#include "include/merge_sort.h"
+#include "include/quicksort.h"
+#include "include/heap_sort.h"
+#include <sys/time.h>
 
 using namespace std;
 
-template <typename Typ>
-std::ostream& operator << (std::ostream& str, list<Typ>& obj){
-    for (int n : obj) {
-        str << n << '\n';
+void generuj_inty(int ilosc, int min, int max){
+    int r = max - min;
+    int wart;
+    for(int i=0; i<ilosc; ++i){
+        wart = rand() % r + min;
+        cout << wart << endl;
+      //  cerr<< "generowanie "<<i;
     }
-    return str;
 }
 
-void testListy(){
-    list<int> lista;
-    lista.push_front(1);
-    lista.push_front(2);
-    lista.push_back(29);
-    list<int>::iterator i = lista.begin();
-    lista.insert(++++i,22);
-    lista.insert(----i,10);
-    lista.push_back(12);
-    lista.push_back(11);
-    lista.pop_front();
-    lista.pop_back();
-    lista.erase(i);
-   // cout << lista;
+void generuj_floaty(int ilosc, float min, float max, int precyzja){
+    int r = (max - min) * precyzja;
+    float wart;
+    for(int i=0; i<ilosc; ++i){
+        wart = (float)(rand() % r)/precyzja + min;
+        cout << wart << endl;
+       // cerr<< "generowanie "<<i;
+    }
 }
 
-void testStosu(){
-    stack<int> stos;
-    stos.push(1);
-    stos.push(2);
-    stos.push(3);
-    stos.pop();
-    stos.pop();
+unsigned long czas_procesu(){
+    struct timeval tv;
+    gettimeofday(&tv,NULL);
+    return 1000000 * tv.tv_sec + tv.tv_usec;
 }
 
-void testKolejki(){
-    queue<int> kolejka;
-    kolejka.push(1);
-    kolejka.push(2);
-    kolejka.push(3);
-    kolejka.pop();
-    kolejka.pop();
+template<typename Typ>
+void tester(){
+    Typ zmienna;
+    unsigned long start;
+    vector<Typ> buff, tab;
+    while(cin >> zmienna){
+        tab.push_back(zmienna);
+    }
+    cout << "wczytano: " << tab.size() << endl;
+
+    buff=tab;
+    start = czas_procesu();
+    posortujQS(buff);
+    cout << "QS: "<<(czas_procesu() - start)/1000.f << "ms" << endl;
+
+        for (size_t i = 1; i < buff.size(); i++){
+        if(buff[i-1] > buff[i]) {
+            cerr << "zle posortowano" << i << endl;
+           // return;
+        }
+    }
+
+    buff=tab;
+    start = czas_procesu();
+    posortujMS(buff);
+    cout << "MS: " << (czas_procesu() - start)/1000.f << "ms" << endl;
+
+
+    for (size_t i = 1; i < buff.size(); i++){
+        if(buff[i-1] > buff[i]) {
+            cerr << "zle posortowano" << i << endl;
+           // return;
+        }
+    }
+
+    buff=tab;
+    start = czas_procesu();
+    posortujHS(buff);
+    cout << "HS: " << (czas_procesu() - start)/1000.f << "ms" << endl;
+
+
+    for (size_t i = 1; i < buff.size(); i++){
+        if(buff[i-1] > buff[i]) {
+            cerr << "zle posortowano" << i << endl;
+           // return;
+        }
+    }
+
 }
 
+int main() {
 
+    tester<int>();
+  //  tester<float>();
+   // generuj_floaty(900000, 10.987, 1000.002, 1000);
+   // generuj_inty(400, 0, 10000);
 
-int main()
-{
-    testStosu();
-    testListy();
-    testKolejki();
+ /*   vector<int> ciag;
+    for (size_t i = 0; i < 100; i++)
+        ciag.push_back(rand() % 1000);
+
+    posortujHS(ciag);
+
+    for (size_t i = 0; i < ciag.size(); i++)
+        cout << ciag[i] << endl;
+*/
+
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
