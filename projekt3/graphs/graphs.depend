@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1556956187 source:/home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/Algorythms.cpp
+	"Algorythms.h"
+
+1556956187 /home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/Algorythms.h
+	<vector>
+	<iostream>
+	"Pair.h"
+
+1556956187 /home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/Pair.h
+	<iostream>
+
+1556956187 source:/home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/NeighbourLists.cpp
+	"NeighbourLists.h"
+
+1556956187 /home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/NeighbourLists.h
+	<iostream>
+	<iomanip>
+	<vector>
+	<list>
+
+1556956187 source:/home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/NeighbourMatrix.cpp
+	"NeighbourMatrix.h"
+
+1556956187 /home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/NeighbourMatrix.h
+	<iostream>
+	<iomanip>
+	<vector>
+
+1556956187 source:/home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/Pair.cpp
+	"Pair.h"
+
+1556956187 source:/home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/Tests.cpp
+	"Tests.h"
+
+1556956187 /home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/Tests.h
+	<iostream>
+	<vector>
+	"NeighbourLists.h"
+	"NeighbourMatrix.h"
+	"Algorythms.h"
+	"Timer.h"
+
+1556956187 /home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/Timer.h
+	<chrono>
+
+1556956187 source:/home/julka/uczelnia/sem4/PAMSI/projekt3/graphs/Timer.cpp
+	"Timer.h"
+	<sys/time.h>
+
