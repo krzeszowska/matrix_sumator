@@ -61,8 +61,8 @@ void test(int size, int factor, int testCount){
     for(int i=0;i<testCount;++i)
         tests.push_back(rand()%size);
 
-    listTimes.push_back(Tests::testBellFord(nl, tests));
-    matrixTimes.push_back(Tests::testBellFord(nm, tests));
+    listTimes.push_back(Tests::testDjiskra(nl, tests));
+    matrixTimes.push_back(Tests::testDjiskra(nm, tests));
 
 
     for(double&k : listTimes)
@@ -88,7 +88,7 @@ int main(int argc, char**argv)
 
     for(int s:sizes){
         for(int f:factors){
-            test(s,f,10);
+            test(s,f,100);
         }
         cout<<endl;
     }
