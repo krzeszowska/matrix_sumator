@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #aa80ff;
+	min-height: 100vh;
+}
+
+#box{
+	width: max-content;
+	height: auto;
+	margin: auto;
+	padding: 5px;
+}
+
+.rectangle{
+	width: 50px;
+	height: 50px;
+	background-color: #66a3ff;
+	display: inline-block;
+	margin: 0px;
+	//border: 1px solid black;
+	margin-left: 5px;
+	padding: 5px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.rectangle:last-child{
+	margin-right: 5px;
+}
+
+.rectangle:hover{
+	background-color: #b3ffff;
+}
+
+.row{
+	width: max-content;
+	margin: 5px 0px;
+	//margin: 0px;
+}
+
+.sign_X{
+	color: #000099;
+}
+
+.sign_Y{
+	color: #ff0000;
+}
+
+.sign_buff{
+	color: transparent;
+}
+
+.menu{
+	padding: 25px;
+	margin: auto;
+	width: 250px;
+}
+
+.menu label{
+	font-weight: 900;
+	font-size: 1.2rem;
+	
+}
+
+.menu input{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 900;
+	font-size: 1.2rem;
+	width: 100%
+}
+
+.menu input[type=submit]{
+
+}
+
+h1.title {
+	font-size: 5rem;
+	text-align: center;
+}
+
+h1.winNotification{
+	font-size: 3rem;	
+	text-align: center;
+	margin-bottom: 10px
+
+
+}

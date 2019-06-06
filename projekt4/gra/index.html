@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+<meta charset="UTF-8">
+
+	<title>Kółko i krzyżyk</title>
+</head>
+<body>
+	<h1 class="title"><span class="sign_X">Kółko</span> i <span class="sign_Y">Krzyżyk</span></h1>
+
+	<div id="box">
+
+		<div class="menu">
+			<label>Szerokość planszy</label>
+			<input type="text" id="xSize" value="3">
+			<label>Wysokość planszy</label>
+			<input type="text" id="ySize" value="3">
+			<label>Długość sekwencji</label>
+			<input type="text" id="seq" value="3">
+			<input type="submit" name="apply" onclick="reloadBoard()" value="Start">
+		</div>
+
+	</div>
+</body>
+</html>
+
+<script type="text/javascript" src="index.js"></script>
